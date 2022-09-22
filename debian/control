@@ -1,0 +1,41 @@
+Source: node-levn
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , livescript
+ , mocha <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-levn
+Vcs-Git: https://salsa.debian.org/js-team/node-levn.git
+Homepage: https://github.com/gkz/levn
+Rules-Requires-Root: no
+
+Package: node-levn
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-prelude-ls
+ , node-type-check
+Multi-Arch: foreign
+Description: Light ECMAScript (JavaScript) Value Notation
+ Levn is a library which allows you to parse a string into a JavaScript value
+ based on an expected type. It is meant for short amounts of human entered data
+ (eg. config files, command line arguments).
+ .
+ Levn aims to concisely describe JavaScript values in text, and allow for the
+ extraction and validation of those values. Levn uses 'type-check' for its type
+ format, and to validate the results.
+ .
+ How is this different than JSON? levn is meant to be written by humans only,
+ is (due to the previous point) much more concise, can be validated against
+ supplied types, has regex and date literals, and can easily be extended with
+ custom types. On the other hand, it is probably slower and thus less efficient
+ at transporting large amounts of data, which is fine since this is not its
+ purpose.
+ .
+ Node.js is an event-based server-side JavaScript engine.

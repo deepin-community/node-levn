@@ -1,0 +1,19 @@
+Description: Use system libs
+ Use packaged versions instead of npm installed ones
+Index: node-levn/Makefile
+===================================================================
+--- node-levn.orig/Makefile
++++ node-levn/Makefile
+@@ -3,9 +3,9 @@ default: all
+ SRC = $(shell find src -name "*.ls" -type f | sort)
+ LIB = $(SRC:src/%.ls=lib/%.js)
+ 
+-LS = node_modules/livescript
+-LSC = node_modules/.bin/lsc
+-MOCHA = node_modules/.bin/mocha
++LS = /usr/lib/nodejs/livescript
++LSC = /usr/bin/lsc
++MOCHA = /usr/bin/mocha
+ 
+ package.json: package.json.ls
+ 	$(LSC) --compile package.json.ls

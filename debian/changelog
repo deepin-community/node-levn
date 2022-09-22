@@ -1,0 +1,61 @@
+node-levn (0.4.1+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Remove depends on nodejs
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 04 Oct 2021 16:20:56 +0000
+
+node-levn (0.4.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version
+  * MA: foreign
+  * Fix watch file
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 04 Oct 2021 09:23:25 +0000
+
+node-levn (0.3.0+dfsg-4) unstable; urgency=medium
+
+  * Team upload
+  * Add debian/clean
+  * Replace old-style mocha test files (Closes: #952191)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 24 Feb 2020 09:31:46 +0100
+
+node-levn (0.3.0+dfsg-3) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Build during build step, not test one
+  * Restore pkg-js-tools files
+  * Fix autopkgtest using pkg-js-tools 0.9.24
+  * Fix test for mocha ≥ 6
+  * Add patch desc
+  * Update copyright
+  * Drop unneeded version constraints from (build) dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 04 Feb 2020 05:57:11 +0100
+
+node-levn (0.3.0+dfsg-2) unstable; urgency=medium
+
+  * Drop compat file, rely on debhelper-compat and bump compat level to 12
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Switch to pkg-js-tools (fix autopkgtest failure)
+  * Fix long description (Closes: #840722)
+  * Add Tessuite field
+  * Change section: web -> javascript
+  * Add description to patch
+  * Switch back to manual autopkgtest
+  * Override missing pkg-js/test file
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 19 Jan 2020 15:13:40 +0530
+
+node-levn (0.3.0+dfsg-1) unstable; urgency=low
+
+  * Initial release (Closes: #840415)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 13 Oct 2016 11:45:28 +0530
